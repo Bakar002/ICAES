@@ -178,12 +178,12 @@
                             </li>
                             <li class="nav-item custom-nav-item">
                                 <a class="nav-link custom-nav-link" id="PRC" aria-current="page"
-                                    href="#pricing">Pricing</a>
+                                    href="#pricing">Registration</a>
                             </li>
-                            <li class="nav-item custom-nav-item">
-                                <a class="nav-link custom-nav-link" id="SPN" aria-current="page"
-                                    href="#sponsors">Sponsors</a>
-                            </li>
+                            <li class="nav-item custom-nav-item" style="display: none;">
+                                <a class="nav-link custom-nav-link" id="SPN" aria-current="page" href="#sponsors">Sponsors</a>
+                              </li>
+                              
                             <li class="nav-item custom-nav-item">
                                 <a class="nav-link custom-nav-link" id="CNT" aria-current="page"
                                     href="#Contact">Contact</a>
@@ -249,15 +249,28 @@
             </div>
             <div class="row about-us-image">
                 <div class="col-md-12 img-fluid">
-                    <img src="/Images/Background/brow1.jpg" alt="Event Image">
+                    <div class="image-container">
+                        <img src="/Images/Background/brow1.jpg" alt="Event Image" class="img-fluid">
+                        <div class="centered-text">
+                            Original Research articles and Technical Reviews can be submitted 
+                            for the conference through on-line submission system. All papers 
+                            are peer reviewed prior to editorial decision on the submissions.
+                        </div>
+                    </div>
                 </div>
             </div>
+            
             <div class="row">
                 <div class="col-md-12 about-us-content">
                     <p>
                         The <strong>International Conference on Advancement in Engineering Sciences</strong> will be held on <strong>4-5 September 2024</strong> at the <strong>Institute of Electrical Electronics & Computer Engineering, University of the Punjab</strong>, under the umbrella of the Punjab Higher Education Commission. The conference encourages the submission of original research papers, case studies, and technical presentations that contribute to the advancement of knowledge in the engineering field. Additionally, it welcomes interdisciplinary studies and encourages collaborations across different engineering disciplines.
                     </p>
+                    <p class="bold-text">
+                        All papers that are accepted and presented will be published in conference proceedings.
+                        Selected high-quality papers submitted to the conference will be published in Innovative Computing Review (ICR)* HEC Y-category.
+                    </p>
                     <p><strong>Focus of the conference includes but is not limited to:</strong></p>
+                   
                     <div class="row conference-focus">
                         <div class="col-md-4 col-sm-6">
                             <ul>
@@ -588,8 +601,7 @@
                     <!-- MODAL POPUP END   -->
                     <div class="owl-carousel owl-theme">
                         <div class="col-md-12">
-                            <div class="speakers-block me-4 wow animated fadeInLeft" data-wow-duration="1s"
-                                data-wow-delay="0.3s">
+                            <div class="speakers-block me-4 wow animated fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
                                 <a href="https://umexpert.um.edu.my/muhammadshakeel.html" target="_blank">
                                     <div class="md-trigger" data-modal="modal-1">
                                         <div class="speaker-pictures position-relative">
@@ -601,8 +613,10 @@
                                         </div>
                                     </div>
                                 </a>
-                                                               <div class="speaker-heading">
+                                <div class="speaker-heading">
                                     <h5>Dr. Muhammad Shakeel Ahmed</h5>
+                                    <h6>Senior Lecturer</h6>
+                                    <p>Universiti Malaya Power Energy Dedicated Advanced Centre</p>
                                 </div>
                                 <div class="speaker-desc">
                                     <p></p>
@@ -610,8 +624,7 @@
                             </div>
                         </div>
                         <div class="col-md-12">
-                            <div class="speakers-block me-4 wow animated fadeInLeft" data-wow-duration="1s"
-                                data-wow-delay="0.5s">
+                            <div class="speakers-block me-4 wow animated fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
                                 <a href="https://www.northumbria.ac.uk/about-us/our-staff/k/jibran-khaliq/" target="_blank">
                                     <div class="md-trigger" data-modal="modal-2">
                                         <div class="speaker-pictures position-relative">
@@ -623,8 +636,12 @@
                                         </div>
                                     </div>
                                 </a>
-                                 <div class="speaker-heading">
+                                <div class="speaker-heading">
                                     <h5>Dr. Jibran Khaliq</h5>
+                                    <h6>Associate Professor
+                                    </h6>
+                                    <p> Mechanical and Construction Engineering at Northumbria University NewCastle
+                                    </p>
                                 </div>
                                 <div class="speaker-desc">
                                     <p></p>
@@ -632,22 +649,22 @@
                             </div>
                         </div>
                         <div class="col-md-12">
-                            <div class="speakers-block me-4 wow animated fadeInLeft" data-wow-duration="1s"
-                                data-wow-delay="0.7s">
+                            <div class="speakers-block me-4 wow animated fadeInLeft" data-wow-duration="1s" data-wow-delay="0.7s">
                                 <a href="https://www.rdm.ox.ac.uk/people/tanveer-tabish" target="_blank">
-
-                                <div class="md-trigger" data-modal="modal-3">
-                                    <div class="speaker-pictures position-relative">
-                                        <div class="speaker-img-content position-absolute">
-                                            <i class="fas fa-search"></i>
-                                            <h6>VIEW MORE</h6>
+                                    <div class="md-trigger" data-modal="modal-3">
+                                        <div class="speaker-pictures position-relative">
+                                            <div class="speaker-img-content position-absolute">
+                                                <i class="fas fa-search"></i>
+                                                <h6>VIEW MORE</h6>
+                                            </div>
+                                            <img class="img-fluid" src="./Images/ProfImages/3.jpeg" alt="team3">
                                         </div>
-                                        <img class="img-fluid " src="./Images/ProfImages/3.jpeg" alt="team3">
                                     </div>
-                                </div>
                                 </a>
                                 <div class="speaker-heading">
                                     <h5>Dr. Tanveer A. Tabish</h5>
+                                    <h6>BHF Advanced Training Fellow</h6>
+                                    <p>Cardiovascular Nanomedicine</p>
                                 </div>
                                 <div class="speaker-desc">
                                     <p></p>
@@ -655,24 +672,22 @@
                             </div>
                         </div>
                         <div class="col-md-12">
-                            <div class="speakers-block me-4 wow animated fadeInLeft" data-wow-duration="1s"
-                                data-wow-delay="0.7s">
+                            <div class="speakers-block me-4 wow animated fadeInLeft" data-wow-duration="1s" data-wow-delay="0.7s">
                                 <a href="https://www.linkedin.com/in/tahir-izhar-3744aa38/?originalSubdomain=pk" target="_blank">
-
-                                <div class="md-trigger" data-modal="modal-4">
-                                    <div class="speaker-pictures position-relative">
-                                        <div class="speaker-img-content position-absolute">
-                                            <i class="fas fa-search"></i>
-                                            <h6>VIEW MORE</h6>
+                                    <div class="md-trigger" data-modal="modal-4">
+                                        <div class="speaker-pictures position-relative">
+                                            <div class="speaker-img-content position-absolute">
+                                                <i class="fas fa-search"></i>
+                                                <h6>VIEW MORE</h6>
+                                            </div>
+                                            <img class="img-fluid" src="./Images/ProfImages/4.jpeg" alt="team4">
                                         </div>
-                                        <img class="img-fluid "
-                                            src="./Images/ProfImages/4.jpeg" alt="team4">
                                     </div>
-                                </div> 
-
                                 </a>
                                 <div class="speaker-heading">
                                     <h5 class="text-uppercase">Prof. Dr. Tahir Izhar</h5>
+                                    <h6>Director R&D</h6>
+                                    <p>Maxell Power Pvt Ltd</p>
                                 </div>
                                 <div class="speaker-desc">
                                     <p></p>
@@ -680,34 +695,32 @@
                             </div>
                         </div>
                         <div class="col-md-12">
-                            <div class="speakers-block me-4 wow animated fadeInLeft" data-wow-duration="1s"
-                                data-wow-delay="0.7s">
+                            <div class="speakers-block me-4 wow animated fadeInLeft" data-wow-duration="1s" data-wow-delay="0.7s">
                                 <a href="https://lums.edu.pk/lums_employee/2683" target="_blank">
-
-                                <div class="md-trigger" data-modal="modal-5">
-                                    <div class="speaker-pictures position-relative">
-                                        <div class="speaker-img-content position-absolute">
-                                            <i class="fas fa-search"></i>
-                                            <h6>VIEW MORE</h6>
+                                    <div class="md-trigger" data-modal="modal-5">
+                                        <div class="speaker-pictures position-relative">
+                                            <div class="speaker-img-content position-absolute">
+                                                <i class="fas fa-search"></i>
+                                                <h6>VIEW MORE</h6>
+                                            </div>
+                                            <img class="img-fluid" src="./Images/ProfImages/5.jpeg" alt="team5">
                                         </div>
-                                        <img class="img-fluid"
-                                            src="./Images/ProfImages/5.jpeg"
-                                            alt="team5">
                                     </div>
-                                </div>
                                 </a>
                                 <div class="speaker-heading">
-                                    <h5>Professor Nauman Ahmad Zaffar</h5>
+                                    <h5>Mr. Nauman Ahmad Zaffar</h5>
+                                    <h6>Project Director of the National Incubation Center</h6>
+                                    <p>Syed Babar Ali School of Science and Engineering (LUMS)</p>
                                 </div>
                                 <div class="speaker-desc">
                                     <p></p>
                                 </div>
                             </div>
                         </div>
-                        
                     </div>
                 </div>
             </div>
+            
         </div>
     </section>
     <!-- SECTION - 4 END   -->
@@ -718,7 +731,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="pricing-heading text-center mt-5 mb-5">
-                        <h1 class="mb-5">Pricing</h1>
+                        <h1 class="mb-5">Registration</h1>
                         <p class="mb-5">See what you get during the event.</p>
                     </div>
                 </div>
@@ -814,7 +827,7 @@
         <div class="row justify-content-center">
             <div class="col-sm-6 col-md-4 col-lg-2 wow animated fadeInRight d-flex justify-content-center" data-wow-duration="1s" data-wow-delay="0.6s">
                 <center>
-                    <img style="width:200px; margin: 10px;" src="./Images/sponsers/sp1.jpg" alt="sponsor1">
+                    <img style="width:200px; margin: 10px;" src="./Images/sponsers/nipon.svg" alt="sponsor1">
                 </center>
             </div>
             <div class="col-sm-6 col-md-4 col-lg-2 wow animated fadeInRight d-flex justify-content-center" data-wow-duration="1s" data-wow-delay="0.7s">
@@ -824,7 +837,7 @@
             </div>
             <div class="col-sm-6 col-md-4 col-lg-2 wow animated fadeInRight d-flex justify-content-center" data-wow-duration="1s" data-wow-delay="0.8s">
                 <center>
-                    <img style="width:200px; margin: 10px;" src="./Images/sponsers/sp3.jpg" alt="sponsor3">
+                    <img style="width:200px; margin: 10px;" src="./Images/sponsers/noor.png" alt="sponsor3">
                 </center>
             </div>
             <div class="col-sm-6 col-md-4 col-lg-2 wow animated fadeInRight d-flex justify-content-center" data-wow-duration="1s" data-wow-delay="0.9s">
@@ -844,6 +857,109 @@
 
     <!-- SECTION - 8 START   -->
    
+    <section class="conference-committee" id="committee">
+        <div class="container">
+            <div class="row">
+                <!-- Left Column -->
+                <div class="col-lg-6 col-md-12">
+                    <!-- Patron in Chief -->
+                    <h3>Patron in Chief:</h3>
+                    <p>Prof. Dr. Khalid Mahmood (VC, PU)</p>
+    
+                    <!-- Convener -->
+                    <h3>Convener:</h3>
+                    <p>Prof. Dr. Hamid Sattar (DEAN, Faculty of Electrical Energy & Environmental Engineering)</p>
+    
+                    <!-- Chief Organizers -->
+                    <h3>Chief Organizers:</h3>
+                    <p>Prof Dr. Azhar Naeem (Director, IEECE)</p>
+    
+                    <!-- Co Organizers -->
+                    <h3>Co Organizers:</h3>
+                    <p>Prof Dr. JEYRAJ A/L SELVARAJ (Deputy Director UMPEDAC, University of Malaya)</p>
+                    <p>Prof Dr. Atif Alvi (DEAN Engg, UMT)</p>
+    
+                    <!-- Advisory Committee -->
+                    <h3>Advisory Committee:</h3>
+                    <ul class="list-unstyled">
+                        <li>Prof. Dr. Nasrudin Abd Rahim (UM)</li>
+                        <li>Dr. MD Hasanuzzaman (Associate Professor, UM)</li>
+                        <li>Prof. Dr. Abdullah Khan</li>
+                        <li>Prof. Dr. Rafi Ullah Khan</li>
+                        <li>Prof. Dr. Niaz Ahmad Akhtar</li>
+                        <li>Prof. Dr. Syed Nadir Hussain</li>
+                        <li>Prof. Dr. Hafiz Muhammad Anwar Asghar</li>
+                        <li>Prof. Dr. Mohsin Ali Raza</li>
+                        <li>Prof. Dr. Tahir Ahmad</li>
+                        <li>Prof. Dr. Aqil Inam</li>
+                        <li>Dr. Muhammad Umar Manzoor</li>
+                        <li>Prof. Dr. Shahzad Maqsood Khan</li>
+                        <li>Prof. Dr. Kamran Abid</li>
+                        <li>Prof. Dr. Mahmood Saleem</li>
+                        <li>Prof. Dr. Shahid Munir</li>
+                        <li>Dr. Syed Sheraz Daood</li>
+                        <li>Prof. Dr. Muhammad Usman Awan</li>
+                        <li>Prof. Dr. Muhammad Shafiq</li>
+                        <li>Dr. Sajid Mahmood (Associate Professor, UMT)</li>
+                        <li>Dr. Malik Tahir Hassan (Associate Professor, UMT)</li>
+                        <li>Dr. Naeem Ahmed (Associate Professor, UMT)</li>
+                    </ul>
+                </div>
+    
+                <!-- Right Column -->
+                <div class="col-lg-6 col-md-12">
+                    <!-- Technical Committee -->
+                    <h3>Technical Committee:</h3>
+                    <ul class="list-unstyled">
+                        <li>Dr. Muhammad Fainan Hanif</li>
+                        <li>Dr. Umar Farroq</li>
+                        <li>Engr. Kashif Habib</li>
+                        <li>Engr. Dr. kamal Shahid</li>
+                        <li>Engr. Akbar Ali Khan</li>
+                        <li>Engr. Dr. Danish Arif</li>
+                        <li>Dr. Ayyaz Muhammad</li>
+                        <li>Engr. Dr. Mudassar Azam</li>
+                        <li>Dr. Aneela Sabir</li>
+                        <li>Dr. Atif Islam</li>
+                        <li>Dr. Nafisa Gull</li>
+                        <li>Dr. Tabinda Riaz</li>
+                        <li>Dr. Zeeshan Azmat</li>
+                        <li>Dr. Rizwan Haider</li>
+                        <li>Dr. Jameel Ahmad (Assistant Professor, UMT)</li>
+                        <li>Dr. Arfan Arshad (Assistant Professor, UMT)</li>
+                        <li>Dr. Muhammad Husnain Ashfaq (Assistant Professor, UMT)</li>
+                        <li>Dr. Siti Rohani Shiekh Raihan (UM)</li>
+                        <li>Dr. Muhammad Shakeel Ahmad (UM)</li>
+                    </ul>
+    
+                    <!-- Conference Secretariat -->
+                    <h3>Conference Secretariat:</h3>
+                    <ul class="list-unstyled">
+                        <li>Engr. Dr. Osama Majeed Butt (General Secretary)</li>
+                        <li>Engr. Dr. Kamal Shahid (PU)</li>
+                        <li>Dr. Muhammad Shakeel Ahmad (UM)</li>
+                        <li>Dr. Muhammad Husnain Ashfaq (UMT)</li>
+                        <li>Mr. Zakaullah (Finance)</li>
+                        <li>Mr. Usama Arif (RP20EE406)</li>
+                        <li>Mr. Sheikh Abubakar Kareem (RP20EE415)</li>
+                        <li>Mr. Shoaib Kaleem (RP20EE421)</li>
+                        <li>Ms. Nayab Shahid (RP20EE425)</li>
+                        <li>Ms. Jannat Khurram (RP20EE426)</li>
+                        <li>Mr. Abdul Waheed (RP20EE427)</li>
+                        <li>Mr. Ali Tahir (RP20EE409)</li>
+                        <li>Ms. Mahnoor Sharafat (RP20EE404)</li>
+                    </ul>
+                    
+                    <!-- Contact/Conference Secretary -->
+                    <h3>Contact/Conference Secretary:</h3>
+                    <p>Engr. Dr. Osama Majeed Butt</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    
     <!-- SECTION - 8 END     -->
 
     <!-- SECTION - 9 START   -->

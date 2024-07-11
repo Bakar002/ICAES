@@ -1649,3 +1649,108 @@ header {
 
 /* SECTION - 10 MEDIA QUERY END */
 /* SECTION - 10 END */
+
+
+.conference-committee h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.conference-committee p, .conference-committee ul {
+    margin-bottom: 10px;
+}
+
+.conference-committee ul {
+    padding-left: 20px;
+}
+
+.conference-committee ul li {
+    list-style: none;
+    padding: 5px 0;
+}
+
+.conference-committee ul li::before {
+    content: "•";
+    color: #000;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+
+.image-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.centered-text {
+    font-weight: 700;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    padding: 10px;
+    border-radius: 5px; /* Optional: Rounds the corners of the text box */
+color: black;
+    font-size: 1.2rem; /* Adjust font size as needed */
+    text-align: center;
+    width: 80%; /* Adjust width as needed */
+}
+
+@media (max-width: 768px) {
+    .centered-text {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+        width: 90%; /* Adjust width for smaller screens */
+    }
+}
+
+
+.bold-text {
+    font-weight: bold;
+    color: black;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .bold-text {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+}
+.speaker-heading h5 {
+    margin-bottom: 5px;
+}
+
+.speaker-heading h6 {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.speaker-heading p {
+    margin: 0;
+}
+
+.speaker-img-content h6 {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .speaker-heading h5 {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+
+    .speaker-heading h6,
+    .speaker-heading p {
+        font-size: 0.9rem; /* Adjust font size for smaller screens */
+    }
+
+    .speaker-img-content h6 {
+        font-size: 0.8rem; /* Adjust font size for smaller screens */
+    }
+}
