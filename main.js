@@ -311,3 +311,25 @@ $("#closebutton").click(function(){
             }, false)
         })
 });
+document.addEventListener('DOMContentLoaded', function() {
+    const modal = document.getElementById('imageModal');
+    const img = document.getElementById('brochureImg');
+    const closeBtn = document.getElementById('closeModal');
+
+    img.addEventListener('click', function() {
+        modal.style.display = 'block';
+        document.body.style.overflow = 'hidden'; // Disable scrolling on body
+    });
+
+    closeBtn.addEventListener('click', function() {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto'; // Enable scrolling on body
+    });
+
+    window.addEventListener('click', function(event) {
+        if (event.target == modal) {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto'; // Enable scrolling on body
+        }
+    });
+});
