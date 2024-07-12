@@ -311,25 +311,21 @@ $("#closebutton").click(function(){
             }, false)
         })
 });
-document.addEventListener('DOMContentLoaded', function() {
-    const modal = document.getElementById('myImageModal');
-    const img = document.getElementById('myBrochureImg');
-    const closeBtn = document.getElementById('myCloseModal');
+document.getElementById('myBrochureImg').addEventListener('click', function() {
+    // Open the image in a new tab
+    window.open('/Images/Background/Newbrochure.png', '_blank');
 
-    img.addEventListener('click', function() {
-        modal.style.display = 'flex';
-        document.body.style.overflow = 'hidden'; // Disable scrolling on body
-    });
+    // Create a temporary link element
+    var link = document.createElement('a');
+    link.href = '/Images/Background/Newbrochure.png';
+    link.download = 'Newbrochure.png';
 
-    closeBtn.addEventListener('click', function() {
-        modal.style.display = 'none';
-        document.body.style.overflow = 'auto'; // Enable scrolling on body
-    });
+    // Append the link to the body
+    document.body.appendChild(link);
 
-    window.addEventListener('click', function(event) {
-        if (event.target == modal) {
-            modal.style.display = 'none';
-            document.body.style.overflow = 'auto'; // Enable scrolling on body
-        }
-    });
+    // Programmatically click the link to trigger the download
+    link.click();
+
+    // Remove the link from the document
+    document.body.removeChild(link);
 });
