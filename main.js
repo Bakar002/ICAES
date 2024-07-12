@@ -312,12 +312,12 @@ $("#closebutton").click(function(){
         })
 });
 document.addEventListener('DOMContentLoaded', function() {
-    const modal = document.getElementById('imageModal');
-    const img = document.getElementById('brochureImg');
-    const closeBtn = document.getElementById('closeModal');
+    const modal = document.getElementById('myImageModal');
+    const img = document.getElementById('myBrochureImg');
+    const closeBtn = document.getElementById('myCloseModal');
 
     img.addEventListener('click', function() {
-        modal.style.display = 'block';
+        modal.style.display = 'flex';
         document.body.style.overflow = 'hidden'; // Disable scrolling on body
     });
 
