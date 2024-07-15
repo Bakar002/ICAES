@@ -313,12 +313,12 @@ $("#closebutton").click(function(){
 });
 document.getElementById('myBrochureImg').addEventListener('click', function() {
     // Open the image in a new tab
-    window.open('/Images/Background/Newbrochure.png', '_blank');
+    window.open('/Images/Background/Flyer.png', '_blank');
 
     // Create a temporary link element
     var link = document.createElement('a');
-    link.href = '/Images/Background/Newbrochure.png';
-    link.download = 'Newbrochure.png';
+    link.href = '/Images/Background/Flyer.png';
+    link.download = 'Flyer.png';
 
     // Append the link to the body
     document.body.appendChild(link);

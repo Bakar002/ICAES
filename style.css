@@ -549,7 +549,7 @@ header {
 }
 
 .gallery-img {
-    background: url('./Images/Background/gallery.jpg');
+    background: url('./Images/Gallery/4.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 344.8px;
@@ -577,7 +577,7 @@ header {
 }
 
 .video-img {
-    background: url('./Images/Background/video.jpg');
+    background: url('./Images/Gallery/9.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
