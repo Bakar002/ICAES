@@ -45,6 +45,42 @@
     <link rel="stylesheet" type="text/css" href="./style.css">
 
     <style>
+        .registration-instructions {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.registration-instructions h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.registration-instructions ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.registration-instructions li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.registration-instructions a.btn {
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .registration-instructions h2 {
+        font-size: 1.5rem;
+    }
+
+    .registration-instructions li {
+        font-size: 1rem;
+    }
+}
+
         audio{
             display:none;
         }
@@ -190,8 +226,8 @@
                                     href="#Contact">Contact</a>
                             </li>
                             <center>
-                                <a class="text-decoration-none" href="" class="text-decoration-none"target="_blank"
-                                        style="color:#fff;">
+                                <a class="text-decoration-none" href="http://111.68.103.26/conference/icaes/2024/user/account" class="text-decoration-none"target="_blank"
+                                        style="color:#fff;" target="_blank">
                                 <button data-mdb-ripple-color="success" type="submit"
                                     class="btn btn-md btn-register p-2" data-wow-duration="1.5s"
                                     data-wow-delay="5.4s">
@@ -611,7 +647,7 @@
     <!-- SECTION - 4 END   -->
 
     <!-- SECTION - 5 START   -->
-    <section class="pricing container-fluid position-relative d-flex align-items-center justify-content-center" id="pricing">
+    <section class="pricing container-fluid position-relative d-flex align-items-center justify-content-center">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -661,6 +697,21 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <!-- Registration Instructions Section -->
+            <div class="registration-instructions text-center mt-5 mb-5" id="pricing">
+                <h2>For Registration:</h2>
+                <ul class="list-unstyled mt-3">
+                    <li>1. Fees can be submitted through online payment, physical submission, or bank transfer.</li>
+                    <li>2. Submit the fee according to your category to the following bank details:</li>
+                    <li>
+                        <strong>Bank Name:</strong> National Bank of Pakistan<br>
+                        <strong>Acct Title:</strong> Director Institute of Electrical<br>
+                        <strong>IBAN:</strong> PK17NBPA2045004173823426
+                    </li>
+                    <li>3. Save the receipt or paid challan for filling out the registration form.</li>
+                    <li><a href="https://forms.gle/ia7ysU41iojwVunu8" class="btn btn-register mt-3" target="_blank">Click to fill the registration form</a></li>
+                </ul>
             </div>
         </div>
     </section>
