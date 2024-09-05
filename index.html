@@ -164,6 +164,13 @@
     from { opacity: 0; }
     to { opacity: 1; }
 }
+.sticky-notification {
+        position: sticky;
+        top: 0;
+        z-index: 1050; /* Above the navbar */
+        font-weight: bold;
+        font-size: 16px;
+    }
 
     </style>
 </head>
@@ -181,67 +188,73 @@
 </div>
 
     <!-- ====== NAVBAR START ====== -->
-    <div class="main_nav-bar">
-        <div class="container custom-cnt">
-            <nav class="navbar navbar-expand-lg navbar-light custom-nav" id="axon-navbar">
-                <div class="container-fluid">
-                    <div class="navbar-logo">
-                        <a class="navbar-brand" href="#">
-                            <img src="./Images/Logos/pulogo.png" alt="ICAES Logo" class="img-fluid w-25 h-auto">
-                        </a>
-                    </div>
-                    
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul class="navbar-nav custom-navbar-nav w-100 justify-content-end" role="tablist">
-                            <li class="nav-item custom-nav-item">
-                                <a class="nav-link custom-nav-link" id="HME" aria-current="page" href="#home">Home</a>
-                            </li>
-                            <li class="nav-item custom-nav-item">
-                                <a class="nav-link custom-nav-link" id="ABT" aria-current="page" href="#about">About</a>
-                            </li>
-                            <li class="nav-item custom-nav-item">
-                                <a class="nav-link custom-nav-link" id="SCH" aria-current="page"
-                                    href="#schedule">Schedule</a>
-                            </li>
-                            <li class="nav-item custom-nav-item">
-                                <a class="nav-link custom-nav-link" id="SPK" aria-current="page"
-                                    href="#speakers">Speakers</a>
-                            </li>
-                            <li class="nav-item custom-nav-item">
-                                <a class="nav-link custom-nav-link" id="PRC" aria-current="page"
-                                    href="#pricing">Registration</a>
-                                </li>
-                                
-                            <li class="nav-item custom-nav-item" style="display: none;">
-                                <a class="nav-link custom-nav-link" id="SPN" aria-current="page" href="#sponsors">Sponsors</a>
-                              </li>
-                              
-                            <li class="nav-item custom-nav-item">
-                                <a class="nav-link custom-nav-link" id="CNT" aria-current="page"
-                                    href="#Contact">Contact</a>
-                            </li>
-                            <center>
-                                <a class="text-decoration-none" href="http://111.68.103.26/conference/icaes/2024/user/account" class="text-decoration-none"target="_blank"
-                                        style="color:#fff;" target="_blank">
+    <!-- Main Navbar -->
+<div class="main_nav-bar mt-4">
+    <div class="container custom-cnt">
+        <nav class="navbar navbar-expand-lg navbar-light custom-nav" id="axon-navbar">
+            <div class="container-fluid">
+                <div class="navbar-logo">
+                    <a class="navbar-brand" href="#">
+                        <img src="./Images/Logos/pulogo.png" alt="ICAES Logo" class="img-fluid w-25 h-auto">
+                    </a>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav custom-navbar-nav w-100 justify-content-end" role="tablist">
+                        <li class="nav-item custom-nav-item">
+                            <a class="nav-link custom-nav-link" id="HME" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item custom-nav-item">
+                            <a class="nav-link custom-nav-link" id="ABT" aria-current="page" href="#about">About</a>
+                        </li>
+                        <li class="nav-item custom-nav-item">
+                            <a class="nav-link custom-nav-link" id="SCH" aria-current="page" href="#schedule">Schedule</a>
+                        </li>
+                        <li class="nav-item custom-nav-item">
+                            <a class="nav-link custom-nav-link" id="SPK" aria-current="page" href="#speakers">Speakers</a>
+                        </li>
+                        <li class="nav-item custom-nav-item">
+                            <a class="nav-link custom-nav-link" id="PRC" aria-current="page" href="#pricing">Registration</a>
+                        </li>
+                        <li class="nav-item custom-nav-item" style="display: none;">
+                            <a class="nav-link custom-nav-link" id="SPN" aria-current="page" href="#sponsors">Sponsors</a>
+                        </li>
+                        <li class="nav-item custom-nav-item">
+                            <a class="nav-link custom-nav-link" id="CNT" aria-current="page" href="#Contact">Contact</a>
+                        </li>
+                        <center>
+                            <a class="text-decoration-none"
+                                href="http://111.68.103.26/conference/icaes/2024/user/account" class="text-decoration-none"
+                                target="_blank" style="color:#fff;">
                                 <button data-mdb-ripple-color="success" type="submit"
                                     class="btn btn-md btn-register p-2" data-wow-duration="1.5s"
                                     data-wow-delay="5.4s">
                                     Paper Submission
                                 </button>
                             </a>
-                            </center>
-                        </ul>
-                    </div>
+                        </center>
+                    </ul>
                 </div>
-            </nav>
-        </div>
+            </div>
+        </nav>
     </div>
-    <!-- ====== NAVBAR END   ====== -->
+</div>
+
+<!-- Sticky Notification -->
+<div class="sticky-notification bg-warning text-dark text-center py-2">
+    Date Extended for Paper Submission: 20 September 2024
+</div>
+
+<!-- Add your CSS styles -->
+<!-- <style>
+  
+</style> -->
+<!-- ====== NAVBAR END   ====== -->
    
     <!-- Newsletter -->
     <!-- SECTION - 1 START -->
