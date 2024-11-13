@@ -561,6 +561,36 @@ header {
     justify-content: center;
 }
 
+
+
+.schedule-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.schedule-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+.schedule-icon {
+    margin-bottom: 15px;
+}
+.schedule-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.schedule-time {
+    font-size: 1rem;
+    color: #6c757d;
+}
+.schedule-venue {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+
+
 .gallery-img:hover,
 .video-img:hover {
     background: var(--primaryHoverColor);
