@@ -576,54 +576,267 @@
     <!-- SECTION - 3 END -->
 
 
-    <section class="container-fluid schedule_page d-flex align-items-center justify-content-center position-relative" id="schedule">
+    <section class="container-fluid schedule_page d-flex align-items-center justify-content-center position-relative mt-4" id="schedule">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="schedule_heading mb-5 mt-4">
-                        <h1 class="text-center mb-5">SCHEDULE</h1>
-                        <p style="visibility: hidden;" class="text-muted">Lorem ipsum dolor sit amet, alia honestatis an qui, ne soluta nemore eripuit sed. Falli exerci aperiam ut his, prompta feugiat usu minimum delicat</p>
+                    <div class="schedule_heading mb-4 mt-4 text-center">
+                        <h1 class="text-uppercase">Schedule</h1>
+                        <p class="text-muted d-none d-md-block" style="opacity: 0.7;">Join us for the 1st International Conference on Advancement in Engineering Sciences 2024</p>
                     </div>
                 </div>
             </div>
-            <div class="row gx-0 mb-5">
-                <div class="col-6 col-md-6">
+            <!-- Day selection buttons -->
+            <div class="row gx-0 mb-4">
+                <div class="col-6">
                     <div class="schedule_btn">
-                        <button class="btn btn-day active_schedule_btn w-100" id="btn-1">Day 1</button>
+                        <button class="btn btn-day active_schedule_btn w-100 py-2 " id="btn-1" onclick="showDay1()">Day 1 - 28 Oct 2024</button>
                     </div>
                 </div>
-                <div class="col-6 col-md-6">
+                <div class="col-6">
                     <div class="schedule_btn">
-                        <button class="btn btn-day w-100" id="btn-2">Day 2</button>
+                        <button class="btn btn-day w-100 py-2" id="btn-2" onclick="showDay2()">Day 2 - 29 Oct 2024</button>
                     </div>
                 </div>
             </div>
+    
+            <!-- Schedule block with modern UI -->
             <div class="row mb-5" id="schedule_block">
-                <div class="schedule_item_heading mb-5">
-                    <h3 class="text-center" id="sch_date">Updated soon</h3>
+                <div class="schedule_item_heading mb-5 text-center">
+                    <h3 id="sch_date" class="text-center">Day 1 - 28 Oct 2024</h3>
                 </div>
-            </div>
-        </div>
-    </section>
-    <section class="container-fluid position-relative d-flex align-items-center justify-content-center mb-5" style="min-height: 10vh">
-        <div class="container">
-            <div class="row mx-auto">
-                <div class="col-md-12">
-                    <div class="sign-up-buttons d-flex flex-row align-items-center justify-content-center">
-                        <div class="col-6 col-md-6 position-relative" id="block-seperator">
-                            <div class="download_schedule_block position-relative d-inline-flex flex-row align-items-center justify-content-center">
-                                <div class="download_schedule_item">
-                                    <a href="./" target="_blank" download="schedule">Download schedule</a>
-                                    <i class="fas fa-download ms-3" style="font-size:20px;"></i>
-                                </div>
+    
+                <!-- Day 1 Schedule Cards -->
+                <div id="day1_schedule" class="row g-4">
+                    <div class="col-12 col-md-6">
+                        <div class="schedule-card p-4 rounded shadow-sm h-100">
+                            <div class="schedule-icon">
+                                <i class="fas fa-calendar-alt fa-2x text-primary"></i>
+                            </div>
+                            <div class="schedule-content">
+                                <h5 class="schedule-time">09:00am - 09:30am</h5>
+                                <h4 class="schedule-title">Arrival/Registration</h4>
+                                <p class="schedule-venue text-muted">Institute of Electrical Electronics & Computer Engineering, PU</p>
                             </div>
                         </div>
-                        <div class="col-6 col-md-6">
-                            <div class="connect__Facebook_block position-relative d-inline-flex flex-row align-items-center justify-content-center">
-                                <div class="connect__Facebook_item">
-                                    <i class="fab fa-facebook-f me-3" style="font-size:20px;"></i>
-                                    <a href="#">Connect VIA Facebook</a>
-                                </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="schedule-card p-4 rounded shadow-sm h-100">
+                            <div class="schedule-icon">
+                                <i class="fas fa-microphone-alt fa-2x text-primary"></i>
+                            </div>
+                            <div class="schedule-content">
+                                <h5 class="schedule-time">09:30am - 10:30am</h5>
+                                <h4 class="schedule-title">Inaugural Session</h4>
+                                <p class="schedule-venue text-muted">Seminar Room, Institute of Electrical Electronics & Computer Engineering, PU</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="schedule-card p-4 rounded shadow-sm h-100">
+                            <div class="schedule-icon">
+                                <i class="fas fa-coffee fa-2x text-primary"></i>
+                            </div>
+                            <div class="schedule-content">
+                                <h5 class="schedule-time">10:30am - 11:00am</h5>
+                                <h4 class="schedule-title">Tea Break</h4>
+                                <p class="schedule-venue text-muted">Institute of Electrical Electronics & Computer Engineering, PU</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="schedule-card p-4 rounded shadow-sm h-100">
+                            <div class="schedule-icon">
+                                <i class="fas fa-chalkboard-teacher fa-2x text-primary"></i>
+                            </div>
+                            <div class="schedule-content">
+                                <h5 class="schedule-time">11:15am - 12:15pm</h5>
+                                <h4 class="schedule-title">Session 01: Future Trends in Telecommunications and Networking</h4>
+                                <p class="schedule-venue text-muted">Lecture Theater 03, PU</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="schedule-card p-4 rounded shadow-sm h-100">
+                            <div class="schedule-icon">
+                                <i class="fas fa-user-tie fa-2x text-primary"></i>
+                            </div>
+                            <div class="schedule-content">
+                                <h5 class="schedule-time">12:15pm - 01:00pm</h5>
+                                <h4 class="schedule-title">Keynote: Dr. Tanveer A Tabish</h4>
+                                <p class="schedule-venue text-muted">Lecture Theater 02, PU</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="schedule-card p-4 rounded shadow-sm h-100">
+                            <div class="schedule-icon">
+                                <i class="fas fa-utensils fa-2x text-primary"></i>
+                            </div>
+                            <div class="schedule-content">
+                                <h5 class="schedule-time">01:00pm - 02:00pm</h5>
+                                <h4 class="schedule-title">Lunch Break</h4>
+                                <p class="schedule-venue text-muted">University Club, PU</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="schedule-card p-4 rounded shadow-sm h-100">
+                            <div class="schedule-icon">
+                                <i class="fas fa-chalkboard-teacher fa-2x text-primary"></i>
+                            </div>
+                            <div class="schedule-content">
+                                <h5 class="schedule-time">03:30pm - 04:30pm</h5>
+                                <h4 class="schedule-title">Session 02: Advances in Artificial Intelligence and Machine Learning</h4>
+                                <p class="schedule-venue text-muted">Room 1C-15, UMT</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="schedule-card p-4 rounded shadow-sm h-100">
+                            <div class="schedule-icon">
+                                <i class="fas fa-user-tie fa-2x text-primary"></i>
+                            </div>
+                            <div class="schedule-content">
+                                <h5 class="schedule-time">04:30pm - 05:00pm</h5>
+                                <h4 class="schedule-title">Keynote: Dr. Jibran Khaliq</h4>
+                                <p class="schedule-venue text-muted">Room 1C-15, UMT</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="schedule-card p-4 rounded shadow-sm h-100">
+                            <div class="schedule-icon">
+                                <i class="fas fa-coffee fa-2x text-primary"></i>
+                            </div>
+                            <div class="schedule-content">
+                                <h5 class="schedule-time">05:00pm - 05:20pm</h5>
+                                <h4 class="schedule-title">Tea Break</h4>
+                                <p class="schedule-venue text-muted">Room 1C-15, UMT</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="schedule-card p-4 rounded shadow-sm h-100">
+                            <div class="schedule-icon">
+                                <i class="fas fa-users fa-2x text-primary"></i>
+                            </div>
+                            <div class="schedule-content">
+                                <h5 class="schedule-time">05:30pm - 06:00pm</h5>
+                                <h4 class="schedule-title">Panel Discussion</h4>
+                                <p class="schedule-venue text-muted">Room 1C-15, UMT</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Day 2 Schedule Cards (Initially Hidden) -->
+                <div id="day2_schedule" class="row g-4" style="display: none;">
+                    <div class="col-12 col-md-6">
+                        <div class="schedule-card p-4 rounded shadow-sm h-100">
+                            <div class="schedule-icon">
+                                <i class="fas fa-calendar-alt fa-2x text-primary"></i>
+                            </div>
+                            <div class="schedule-content">
+                                <h5 class="schedule-time">09:00am - 09:30am</h5>
+                                <h4 class="schedule-title">Arrival/Registration</h4>
+                                <p class="schedule-venue text-muted">Institute of Electrical Electronics & Computer Engineering, PU</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="schedule-card p-4 rounded shadow-sm h-100">
+                            <div class="schedule-icon">
+                                <i class="fas fa-user-tie fa-2x text-primary"></i>
+                            </div>
+                            <div class="schedule-content">
+                                <h5 class="schedule-time">09:45am - 10:30am</h5>
+                                <h4 class="schedule-title">Keynote: Prof. Dr. Tahir Izhar</h4>
+                                <p class="schedule-venue text-muted">Lecture Theater 02, PU</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="schedule-card p-4 rounded shadow-sm h-100">
+                            <div class="schedule-icon">
+                                <i class="fas fa-chalkboard-teacher fa-2x text-primary"></i>
+                            </div>
+                            <div class="schedule-content">
+                                <h5 class="schedule-time">10:45am - 12:00pm</h5>
+                                <h4 class="schedule-title">Session 04: Innovations in Renewable Energy Systems</h4>
+                                <p class="schedule-venue text-muted">Lecture Theater 03, PU</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="schedule-card p-4 rounded shadow-sm h-100">
+                            <div class="schedule-icon">
+                                <i class="fas fa-user-tie fa-2x text-primary"></i>
+                            </div>
+                            <div class="schedule-content">
+                                <h5 class="schedule-time">12:00pm - 12:45pm</h5>
+                                <h4 class="schedule-title">Keynote: Dr. Muhammad Shakeel Ahmad</h4>
+                                <p class="schedule-venue text-muted">Lecture Theater 02, PU</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="schedule-card p-4 rounded shadow-sm h-100">
+                            <div class="schedule-icon">
+                                <i class="fas fa-utensils fa-2x text-primary"></i>
+                            </div>
+                            <div class="schedule-content">
+                                <h5 class="schedule-time">01:00pm - 02:00pm</h5>
+                                <h4 class="schedule-title">Lunch Break</h4>
+                                <p class="schedule-venue text-muted">University Club, PU</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="schedule-card p-4 rounded shadow-sm h-100">
+                            <div class="schedule-icon">
+                                <i class="fas fa-user-tie fa-2x text-primary"></i>
+                            </div>
+                            <div class="schedule-content">
+                                <h5 class="schedule-time">02:30pm - 03:15pm</h5>
+                                <h4 class="schedule-title">Guest Speaker: Prof. Nauman Zaffar</h4>
+                                <p class="schedule-venue text-muted">Lecture Theater 02, PU</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="schedule-card p-4 rounded shadow-sm h-100">
+                            <div class="schedule-icon">
+                                <i class="fas fa-image fa-2x text-primary"></i>
+                            </div>
+                            <div class="schedule-content">
+                                <h5 class="schedule-time">03:30pm - 04:15pm</h5>
+                                <h4 class="schedule-title">Poster Presentation</h4>
+                                <p class="schedule-venue text-muted">Examination Hall, PU</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="schedule-card p-4 rounded shadow-sm h-100">
+                            <div class="schedule-icon">
+                                <i class="fas fa-user-tie fa-2x text-primary"></i>
+                            </div>
+                            <div class="schedule-content">
+                                <h5 class="schedule-time">04:30pm - 05:15pm</h5>
+                                <h4 class="schedule-title">Keynote: Prof. Dr. Shahzad Maqsood Khan</h4>
+                                <p class="schedule-venue text-muted">Lecture Theater 02, PU</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="schedule-card p-4 rounded shadow-sm h-100">
+                            <div class="schedule-icon">
+                                <i class="fas fa-door-closed fa-2x text-primary"></i>
+                            </div>
+                            <div class="schedule-content">
+                                <h5 class="schedule-time">05:30pm - 06:00pm</h5>
+                                <h4 class="schedule-title">Closing Session</h4>
+                                <p class="schedule-venue text-muted">Seminar Room, PU</p>
                             </div>
                         </div>
                     </div>
@@ -631,7 +844,10 @@
             </div>
         </div>
     </section>
+    
 
+
+    
 
 
 

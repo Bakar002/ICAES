@@ -116,7 +116,7 @@ $('.custom-carousel').owlCarousel({
     }
 });
 document.getElementById("btn-1").addEventListener("click", function () {
-    document.getElementById("sch_date").innerHTML = "Updated soon";
+    // document.getElementById("sch_date").innerHTML = "Updated soon";
     document.getElementById("btn-1").classList.add("active_schedule_btn");
     document.getElementById("btn-2").classList.remove("active_schedule_btn");
     document.getElementById("btn-3").classList.remove("active_schedule_btn");
@@ -152,7 +152,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 document.getElementById("btn-2").addEventListener("click", function () {
-    document.getElementById("sch_date").innerHTML = "Updated soon";
+    // document.getElementById("sch_date").innerHTML = "Updated soon";
     document.getElementById("btn-2").classList.add("active_schedule_btn");
     document.getElementById("btn-1").classList.remove("active_schedule_btn");
     document.getElementById("btn-3").classList.remove("active_schedule_btn");
@@ -329,6 +329,22 @@ document.getElementById('myBrochureImg').addEventListener('click', function() {
     // Remove the link from the document
     document.body.removeChild(link);
 });
+
+
+
+
+
+function showDay1() {
+    document.getElementById("sch_date").innerText = "Day 1 - 28 Oct 2024";
+    document.getElementById("day1_schedule").style.display = "flex";
+    document.getElementById("day2_schedule").style.display = "none";
+}
+
+function showDay2() {
+    document.getElementById("sch_date").innerText = "Day 2 - 29 Oct 2024";
+    document.getElementById("day1_schedule").style.display = "none";
+    document.getElementById("day2_schedule").style.display = "flex";
+}
 
 
 
