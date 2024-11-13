@@ -329,3 +329,25 @@ document.getElementById('myBrochureImg').addEventListener('click', function() {
     // Remove the link from the document
     document.body.removeChild(link);
 });
+
+
+
+
+document.getElementById('myProceed').addEventListener('click', function() {
+    // Open the image in a new tab
+    window.open('/cf.pdf', '_blank');
+
+    // Create a temporary link element
+    var link = document.createElement('a');
+    link.href = '/cf.pdf';
+    link.download = 'Flyer.png';
+
+    // Append the link to the body
+    document.body.appendChild(link);
+
+    // Programmatically click the link to trigger the download
+    link.click();
+
+    // Remove the link from the document
+    document.body.removeChild(link);
+});
